@@ -1,3 +1,9 @@
+/*
+Author: Asmita Subedi
+Roll no: 0346"A"
+Creating own class: Animal Class
+*/
+
 #include<iostream>
 #include <string>
 #include "Animal.h"
@@ -8,6 +14,11 @@ Animal::Animal( string type, string name, string color)
     setType(type);
     setName(name);
     setColor(color);
+}
+
+Animal::~Animal()
+{
+    cout << endl << "Object " << name << " Destroyed."<<endl;
 }
 // setFunctions
 void Animal::setType(string a_type)
@@ -38,7 +49,7 @@ string Animal::getColor()
 // display
 void Animal::displayMsg()
 {
-    cout <<getName()<< " is a " << getType() << " animal which has " << getColor() <<" color." << endl;
+    cout << endl <<getName()<< " is a " << getType() << " animal which has " << getColor() <<" color." << endl;
 }
 
 

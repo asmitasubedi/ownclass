@@ -1,9 +1,20 @@
+/*
+Author: Asmita Subedi
+Roll no: 0346"A"
+Creating own class: Animal Class
+*/
+
 #include <string>
 using namespace std;
 
-class Animal {
+#ifndef ANIMAL_H
+#define ANIMAL_H
+
+class Animal
+{
  public:
-        Animal( string type, string name, string color);
+        Animal( string type="", string name="", string color="");
+        ~Animal();
         void setType(string a_type);
         void setName(string a_name);
         void setColor(string a_color);
@@ -18,4 +29,7 @@ class Animal {
         string color;
 
  };
+
+#endif // ANIMAL_H
+
 
